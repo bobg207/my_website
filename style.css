@@ -22,6 +22,16 @@ body {
     display: none;
 }
 
+.name-wrapper {
+    display: flex;
+}
+
+.blue-box {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+}
+
 .logo-name {
     font-size: 22px;
     font-weight: bold;
