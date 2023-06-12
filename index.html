@@ -4,54 +4,83 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <style>
-            .header {
-                
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            .links {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                text-align: right;
-            }
-
-            .div-1 {
-                width: 75px;
-            }
-
-            .div-2 {
-                color: black;
-                width: 100px;
-            }
-
-            .div-3 {
-                width: 75px;
-            }
-
-            a {
-                text-decoration: none;
-                color: black;
-            }
-
-        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <title>About Me</title>  
     </head>
     <body>
-        <div class="header">
-            <div class="nav div-1">PHS</div>
-            <div class="links">
-                <div class="nav div-2">
-                    <a href="schedule.html">Schedule</a>
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="logo-wrapper">
+                    <div class="blue-box"></div>
+                    <p class="logo-name">Robert Girsch</p>
+                    <p class="logo-occupation"><span class="slash">/</span> PHS Teacher</p>
                 </div>
-                <div class="nav div-3">
-                    <a href="#">About</a>
+                <nav class="links">
+                    <div class="close-btn">
+                        <i class="fa-sharp fa-solid fa-xmark"></i>
+                    </div>
+                    <a href="/about-me.html" class="link">About Me</a>
+                    <a href="#" class="link">Resume</a>
+                    <a href="#" class="link">Projects</a>
+                    <a href="#" class="link">Contact</a>
+                </nav>
+                <div class="open-btn">
+                    <i class="fa-solid fa-bars-staggered"></i>
                 </div>
             </div>
-        </div>
-        
+        </header>
+        <main>
+            <div class="left-wrapper"></div>
+            <div class="right-wrapper">
+                <div class="intro-wrapper">
+                    <h1>Hello</h1>
+                    <h2 class="intro-sentence">I am a High School Math/Computer Science Teacher</h2>
+                    <button class="intro-btn">Resume</button>
+                    <button class="intro-btn">Projects</button>
+                    <p class="intro-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, eos. Reiciendis delectus possimus officia accusamus repellendus quo pariatur placeat? Consequatur possimus neque amet debitis, sint mollitia quos maiores eveniet nam?</p>
+                    <p class="intro-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, aspernatur.</p>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card-top">
+                    <img src="/images/profile-img.jpg" alt="profile picture" class="profile-pic">
+                    <h2 class="card-name">Robert Girsch</h2>
+                    <div class="horiz-break"></div>
+                    <p class="card-occupation">Math/Computer Science Teacher</p>
+                </div>
+                <div class="card-btm">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-wrapper">
+                <div class="foot-lft">
+                    <p>&#169;2023 by PortCityWeb</p>
+                    <p>Powered by caffeine</p>
+                </div>
+                <div class="foot-rt">
+                    <div class="call">
+                        <p>Call</p>
+                        <p>207-123-4567</p>
+                    </div>
+                    <div class="write">
+                        <p>Write</p>
+                        <p>somebody@somewhere.com</p>
+                    </div>
+                    <div class="follow">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
     </body>
 </html>
